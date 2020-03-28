@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Perfumes</h1>
+  <div class="row">
+    <% @perfumes.each do |perfume| %>
+      <div class="col-6 col-md-4">
+        <div class="card">
+          <%= image_tag perfume.photo_url , class: "card-img-top" %>
+          <div class="card-body">
+            <h5 class="card-title"><%= perfume.name %></h5>
+            <p class="card-text"><%= perfume.category.name %></p>
+            <%= link_to "More details", perfume_path(perfume), class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
