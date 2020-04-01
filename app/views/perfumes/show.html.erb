@@ -6,7 +6,13 @@
     <div class="col-sm-12 col-md-6">
       <h1><%= @perfume.name %></h1>
       <p>Some awesome description of our amazing perfume.</p>
-      <p>$$$</p>
+      <p>Amount: <%= humanized_money_with_symbol(@perfume.price) %></p>
+      <%= form_tag orders_path do %>
+        <%= hidden_field_tag 'perfume_id', @perfume.id %>
+        <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+      <% end %>
+      <br>
+      <%= link_to "Back Perfumes", perfumes_path, class: "btn btn-outline-dark" %>
     </div>
   </div>
 </div>
