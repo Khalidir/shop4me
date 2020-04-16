@@ -1,1 +1,24 @@
 // Specific CSS for your home-page
+body {
+  background-image: url("scent.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex-grow: 1;
+}
+
+.footer {
+  flex-grow: 0;
+  background: transparent;
+}
+
+.navbar {
+  background: transparent;
+}
+
