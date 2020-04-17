@@ -18,4 +18,6 @@ puts 'Creating perfumes...'
 Perfume.create!(price: 70,sku: 'arabian-oud', name: 'Arabian Knight',    category: spray, photo_url: 'https://pimages.parfumo.de/480/47815_img-6971-arabian_oud-arabian_knight_480.jpg')
 Perfume.create!(price: 65,sku: 'madawi-arabian-oud', name: 'Madawi Oud', category: oil, photo_url: 'https://fimgs.net/mdimg/perfume/social.51307.jpg')
 Perfume.create!(price: 87,sku: 'asala-oud',   name: 'Asala Oil',         category: oil, photo_url: 'https://cdn.shopify.com/s/files/1/0127/7840/5947/products/asalah2_700x.jpg')
+Perfume.create!(price: 72,sku: 'midnight-oud',   name: 'Midnight Oud',   category: oil, photo_url: 'midnightoud.png')
 puts 'Finished!'
+
