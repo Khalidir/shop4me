@@ -15,9 +15,14 @@ oil = Category.create!(name: 'oil')
 spray = Category.create!(name: 'spray')
 
 puts 'Creating perfumes...'
-Perfume.create!(price: 70,sku: 'arabian-oud', name: 'Arabian Knight',    category: spray, photo_url: 'https://pimages.parfumo.de/480/47815_img-6971-arabian_oud-arabian_knight_480.jpg')
-Perfume.create!(price: 65,sku: 'madawi-arabian-oud', name: 'Madawi Oud', category: oil, photo_url: 'https://fimgs.net/mdimg/perfume/social.51307.jpg')
-Perfume.create!(price: 87,sku: 'asala-oud',   name: 'Asala Oil',         category: oil, photo_url: 'https://cdn.shopify.com/s/files/1/0127/7840/5947/products/asalah2_700x.jpg')
-Perfume.create!(price: 72,sku: 'midnight-oud',   name: 'Midnight Oud',   category: oil, photo_url: 'midnightoud.png')
+Perfume.create!(price: 70,sku: 'arabian-oud', name: 'Arabian Knight',    category: spray, photo_url: 'ArabianKnight.png')
+Perfume.create!(price: 65,sku: 'madawi-arabian-oud', name: 'Madawi Oud', category: spray, photo_url: 'MadawiOud.png')
+Perfume.create!(price: 87,sku: 'asala-oud',   name: 'Asala Oil',         category: oil, photo_url: 'AsalaOil.png')
+Perfume.create!(price: 72,sku: 'midnight-oud',   name: 'Midnight Oud',   category: spray, photo_url: 'midnightoud.png')
+Perfume.create!(price: 55,sku: 'borneo-oud',   name: 'Borneo Oud',   category: spray, photo_url: 'BorneoOud.png')
+Perfume.create!(price: 67,sku: 'x-oud',   name: 'X Oud',   category: oil, photo_url: 'XOud.png')
+Perfume.create!(price: 42,sku: 'woody-oil',   name: 'Woody Oil',   category: oil, photo_url: 'WoodyOil.png')
+Perfume.create!(price: 80,sku: 'oud-manifica',   name: 'Oud Magnifica',   category: oil, photo_url: 'OudMagnifica.png')
+Perfume.create!(price: 61,sku: 'treasure-oud',   name: 'Treasure Oud',   category: oil, photo_url: 'TreasureOud.png')
 puts 'Finished!'
 

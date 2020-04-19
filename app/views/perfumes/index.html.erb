@@ -9,7 +9,7 @@
             <h5 class="card-title"><%= perfume.name %></h5>
             <p class="card-text"><%= perfume.category.name %></p>
             <p>Amount: <%= humanized_money_with_symbol(perfume.price) %></p>
-            <%= link_to "More details", perfume_path(perfume), class: "btn btn-primary" %>
+            <%= link_to "More details", perfume_path(perfume), class: "btn btn-secondary" %>
           </div>
         </div>
       </div>
