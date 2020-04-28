@@ -15,7 +15,7 @@ oil = Category.create!(name: 'oil')
 spray = Category.create!(name: 'spray')
 
 puts 'Creating perfumes...'
-Perfume.create!(price: 70,sku: 'arabian-oud', name: 'Arabian Knight',    category: spray, photo_url: 'ArabianKnight.png')
+Perfume.create!(price: 70,sku: 'arabian-oud', name: 'Arabian Knight',    category: spray, photo_url: 'ArabianKnight.png', description: 'Arabian Knight is a perfume by Arabian Oud for women and men and was released in 2014. The scent is spicy-floral.')
 Perfume.create!(price: 65,sku: 'madawi-arabian-oud', name: 'Madawi Oud', category: spray, photo_url: 'MadawiOud.png')
 Perfume.create!(price: 87,sku: 'asala-oud',   name: 'Asala Oil',         category: oil, photo_url: 'AsalaOil.png')
 Perfume.create!(price: 72,sku: 'midnight-oud',   name: 'Midnight Oud',   category: spray, photo_url: 'midnightoud.png')
