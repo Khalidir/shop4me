@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
 
 puts 'Cleaning database...'
 Perfume.destroy_all if Rails.env.development?
@@ -25,4 +26,5 @@ Perfume.create!(price: 42,sku: 'woody-oil',   name: 'Woody Oil',   category: oil
 Perfume.create!(price: 80,sku: 'oud-manifica',   name: 'Oud Magnifica',   category: oil, photo_url: 'OudMagnifica.png')
 Perfume.create!(price: 61,sku: 'treasure-oud',   name: 'Treasure Oud',   category: oil, photo_url: 'TreasureOud.png')
 puts 'Finished!'
+
 
